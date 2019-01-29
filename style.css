@@ -20,13 +20,16 @@ div.pimg3 {
 
 div.pimg1 {
     background: url(../parallaxEx/images/pexels-photo-169573.jpeg);
+    min-height: 100%;
 
 }
 
 div.pimg2 {
     background: url(../parallaxEx/images/pexels-photo-249798.png);
+    min-height: 400px;
 }
 
 div.pimg3 {
     background: url(../parallaxEx/images/pexels-photo-574069.jpeg);
+    min-height: 300px;
 }
