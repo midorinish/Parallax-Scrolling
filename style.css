@@ -11,12 +11,48 @@ html {
 
 /*Parallax Image Styling*/
 
-/**/
-div.pimg1,
-div.pimg2,
-div.pimg3 {
-    color: #000;
+/*positioned as relative, no repeating, fixed background*/
+
+body > div.pimg1,
+body > div.pimg2,
+body > div.pimg3 {
+
+        color: #000;
+        position: relative;
+        
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        
+        /*FIXED= PARALLAX EFFECT
+        SCROLL- NORMAL (DEFAULT)*/
+    
+        background-attachment: fixed;
 }
+/*PARALLAX TEXT*/
+
+.caption {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 1.4rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.caption .border {
+    background-color:black;
+    color: white;
+    padding: 1rem;
+}
+
+.caption .border.trans {
+    background-color: #black;
+}
+
 
 div.pimg1 {
     background: url(./images/pexels-photo-169573.jpeg);
